@@ -1,0 +1,19 @@
+{# templates/results/single.html.twig #}
+<table>
+    <tr>
+        <th>Paper Plane Model</th>
+        <th>Travelled Distance</th>
+        <th>Flight Duration</th>
+        <th>Participant Name</th>
+        <th>Participation Date</th>
+    </tr>
+    {% for result in results %}
+        <tr>
+            <td>{{ result.paperPlaneModel }}</td>
+            <td>{{ result.travelledDistance }}</td>
+            <td>{{ result.flightDuration }}</td>
+            <td>{{ result.participantName }}</td>
+            <td>{{ result.participationDate }}</td>
+        </tr>
+    {% endfor %}
+</table>
